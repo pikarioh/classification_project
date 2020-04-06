@@ -3,7 +3,7 @@ function [data,identifier] = GetData()
 %rowheader as identifier
 
 data = textscan('vowdata_nohead.dat','U16');
-identifier = data(1:1668,0);
-data = data(1:1668,7:16);
+identifier = data(0:1668,0);
+data = data(0:1668,7:16);
 end
 
